@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><i class="fa-solid fa-code"></i> Youssef Sherif </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content fade-in">
+            <div class="hero-label">👋 Welcome to my portfolio</div>
+            <h1>Hi, I'm <span class="highlight">Youssef Sherif</span></h1>
+            <h2 class="typing-text" data-text="Node.js Backend Developer | UI/UX Designer">Node.js Backend Developer | UI/UX Designer</h2>
+            <p>I architect and build high-performance, scalable backend systems with Node.js, specializing in RESTful APIs, microservices, and real-time applications.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn primary"><i class="fa-solid fa-folder-open"></i> View My Work</a>
+                <a href="#contact" class="btn secondary"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+            </div>
+            <!-- <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">30+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">99%</span>
+                    <span class="stat-label">Client Satisfaction</span>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2 class="section-title fade-in">About Me</h2>
+        <div class="container">
+            <div class="about-content fade-in">
+                <div class="about-text-box">
+                    <p class="about-text">
+                        I am currently focused on <strong>Node.js Backend Development</strong>  where I enjoy designing logic, building scalable systems, and writing clean, efficient code. I find real satisfaction in transforming complex ideas into structured and reliable solutions.
+                    </p>
+                    <p class="about-text">
+My technical foundation includes working with <strong>Node.js</strong>, <strong>Express.js</strong>, <strong>NestJS</strong>, <strong>and SQL</strong>, along with a solid programming background in <strong>Python</strong> and <strong>C++</strong>. I also have experience with modern web technologies such as <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>React.js</strong>, and <strong>Tailwind CSS</strong>, which helps me understand applications from end to end.
+                    </p>
+                    <p class="about-text">
+I am continuously developing my skills through hands-on projects and consistent learning, with a strong interest in real-world applications and best practices.
+                    </p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Frontend Development</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-brands fa-node-js"></i>
+                        <span>Backend Development</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <span>UI/UX Design</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-palette"></i>
+                        <span>Creative Solutions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 class="section-title fade-in">My Technical Skills</h2>
+        <div class="container skills-grid">
+            
+            <div class="skill-card fade-in">
+                <i class="fa-brands fa-react icon"></i>
+                <h3>Frontend Development</h3>
+                <p>React.js, HTML5, CSS3</p>
+                <p>Tailwind CSS,Responsive Design</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-card fade-in">
+                <i class="fa-brands fa-node-js icon"></i>
+                <h3>Backend Development</h3>
+                <p>Node.js, Express.js, NestJS</p>
+                <p>Fastify, Socket.io, REST APIs</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 95%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-card fade-in">
+                <i class="fa-solid fa-database icon"></i>
+                <h3>Databases</h3>
+                <p>MongoDB, PostgreSQL, MySQL</p>
+                <p>Redis, Elasticsearch, Data Optimization</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-card fade-in">
+                <i class="fa-solid fa-pen-nib icon"></i>
+                <h3>UI/UX Design</h3>
+                <p>Figma, User Research, Prototyping</p>
+                <p>Wireframing, Design Systems, Adobe XD</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-card fade-in">
+                <i class="fa-solid fa-server icon"></i>
+                <h3>APIs & Architecture</h3>
+                <p>RESTful APIs, GraphQL, Microservices</p>
+                <p>Event-Driven Architecture, Scalability</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 92%;"></div>
+                </div>
+            </div>
+<!-- 
+            <div class="skill-card fade-in">
+                <i class="fa-brands fa-docker icon"></i>
+                <h3>DevOps & Cloud</h3>
+                <p>Docker, Kubernetes, AWS, CI/CD</p>
+                <p>Nginx, PM2, Testing, Git & Postman</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%;"></div>
+                </div>
+            </div> -->
+
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title fade-in">Featured Projects</h2>
+        <div class="container projects-list">
+            
+            <!-- <div class="project-item fade-in">
+                <div class="project-header">
+                    <h3><i class="fa-solid fa-cart-shopping"></i> E-Commerce Backend API</h3>
+                    <span class="project-status live">Live</span>
+                </div>
+                <span class="tag">Node.js</span> <span class="tag">Express</span> <span class="tag">MongoDB</span> <span class="tag">Redis</span> <span class="tag">Stripe</span>
+                <p>A high-performance RESTful API for a large-scale e-commerce platform. Features include JWT authentication, payment gateway integration (Stripe), real-time inventory management, order processing, and admin dashboard API. Implemented caching with Redis achieving 70% faster response times.</p>
+                <ul class="project-features">
+                    <li><i class="fa-solid fa-check"></i> Handles 10K+ requests/minute</li>
+                    <li><i class="fa-solid fa-check"></i> JWT & OAuth2 authentication</li>
+                    <li><i class="fa-solid fa-check"></i> Rate limiting & security middleware</li>
+                </ul>
+                <div class="links">
+                    <a href="#" class="link-btn"><i class="fa-brands fa-github"></i> View Code</a>
+                    <a href="#" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                </div>
+            </div>
+
+            <div class="project-item fade-in">
+                <div class="project-header">
+                    <h3><i class="fa-solid fa-comments"></i> Real-Time Chat Application</h3>
+                    <span class="project-status">Production</span>
+                </div>
+                <span class="tag">Socket.io</span> <span class="tag">Node.js</span> <span class="tag">PostgreSQL</span> <span class="tag">Docker</span>
+                <p>A scalable real-time messaging platform supporting private and group chats, file sharing, and presence detection. Built with Socket.io for WebSocket communication, PostgreSQL for data persistence, and Docker for containerization.</p>
+                <ul class="project-features">
+                    <li><i class="fa-solid fa-check"></i> 5000+ concurrent connections</li>
+                    <li><i class="fa-solid fa-check"></i> Message encryption & file upload</li>
+                    <li><i class="fa-solid fa-check"></i> Typing indicators & read receipts</li>
+                </ul>
+                <div class="links">
+                    <a href="#" class="link-btn"><i class="fa-brands fa-github"></i> View Code</a>
+                    <a href="#" class="link-btn"><i class="fa-solid fa-book"></i> Documentation</a>
+                </div>
+            </div>
+
+            <div class="project-item fade-in">
+                <div class="project-header">
+                    <h3><i class="fa-solid fa-cubes"></i> Microservices Architecture</h3>
+                    <span class="project-status">Enterprise</span>
+                </div>
+                <span class="tag">NestJS</span> <span class="tag">RabbitMQ</span> <span class="tag">Kubernetes</span> <span class="tag">TypeScript</span>
+                <p>A distributed microservices system for a SaaS platform. Implemented message queuing with RabbitMQ, service discovery, API Gateway, and deployed on Kubernetes. Includes separate services for authentication, user management, billing, and notifications.</p>
+                <ul class="project-features">
+                    <li><i class="fa-solid fa-check"></i> Event-driven architecture</li>
+                    <li><i class="fa-solid fa-check"></i> Auto-scaling & load balancing</li>
+                    <li><i class="fa-solid fa-check"></i> Centralized logging & monitoring</li>
+                </ul>
+                <div class="links">
+                    <a href="#" class="link-btn"><i class="fa-brands fa-github"></i> View Code</a>
+                    <a href="#" class="link-btn"><i class="fa-solid fa-diagram-project"></i> Architecture</a>
+                </div>
+            </div>
+
+            <div class="project-item fade-in">
+                <div class="project-header">
+                    <h3><i class="fa-solid fa-chart-line"></i> Analytics & Reporting API</h3>
+                    <span class="project-status">Development</span>
+                </div>
+                <span class="tag">Node.js</span> <span class="tag">GraphQL</span> <span class="tag">MongoDB</span> <span class="tag">AWS</span>
+                <p>A powerful analytics API using GraphQL for flexible data querying. Processes millions of events daily, generates custom reports, and provides real-time dashboards. Deployed on AWS Lambda for cost-effective serverless architecture.</p>
+                <ul class="project-features">
+                    <li><i class="fa-solid fa-check"></i> Complex data aggregations</li>
+                    <li><i class="fa-solid fa-check"></i> Custom report generation</li>
+                    <li><i class="fa-solid fa-check"></i> Serverless & cost-optimized</li>
+                </ul>
+                <div class="links">
+                    <a href="#" class="link-btn"><i class="fa-brands fa-github"></i> View Code</a>
+                    <a href="#" class="link-btn"><i class="fa-solid fa-play"></i> API Playground</a>
+                </div>
+            </div> -->
+
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-title fade-in">Get In Touch</h2>
+        <div class="container contact-wrapper fade-in">
+            <div class="contact-text">
+                <h3>Let's Build Something Great Together</h3>
+                <p>I'm always interested in hearing about new projects and opportunities. Whether you need a robust backend system, API development, or UI/UX Designs, I'm here to help.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=youseefsherif89@gmail.com" target="_blank">youseefsherif89@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <div>
+                            <strong>LinkedIn</strong>
+                            <a href="https://www.linkedin.com/in/youseef-sherif" target="_blank">Connect with me</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-brands fa-github"></i>
+                        <div>
+                            <strong>GitHub</strong>
+                            <a href="https://github.com/youseefsherif3" target="_blank">View my code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Youssef Sherif. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
