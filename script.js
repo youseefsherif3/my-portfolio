@@ -22,45 +22,40 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Continuous typing effect for hero section
+// Smooth fade in/out effect for hero section
 const typingText = document.querySelector('.typing-text');
 if (typingText) {
     const text = typingText.getAttribute('data-text');
-    let isDeleting = false;
-    let index = 0;
-    const typeSpeed = 80;
-    const deleteSpeed = 50;
-    const pauseTime = 2000; // Pause before deleting
+    typingText.textContent = text;
     
-    function type() {
-        const currentText = typingText.textContent;
-        
-        if (!isDeleting) {
-            // Typing forward
-            if (index < text.length) {
-                typingText.textContent = text.substring(0, index + 1);
-                index++;
-                setTimeout(type, typeSpeed);
-            } else {
-                // Pause before deleting
-                isDeleting = true;
-                setTimeout(type, pauseTime);
-            }
+    let isVisible = true;
+    const visibleDuration = 3000; // How long text is visible
+    const fadeDuration = 800; // Fade transition duration
+    const hiddenDuration = 500; // How long text is hidden
+    
+    function toggleVisibility() {
+        if (isVisible) {
+            // Fade out
+            typingText.style.transition = `opacity ${fadeDuration}ms ease-in-out`;
+            typingText.style.opacity = '0';
+            
+            setTimeout(() => {
+                isVisible = false;
+                setTimeout(toggleVisibility, hiddenDuration);
+            }, fadeDuration);
         } else {
-            // Deleting backward
-            if (index > 0) {
-                index--;
-                typingText.textContent = text.substring(0, index);
-                setTimeout(type, deleteSpeed);
-            } else {
-                // Start typing again
-                isDeleting = false;
-                setTimeout(type, 500);
-            }
+            // Fade in
+            typingText.style.transition = `opacity ${fadeDuration}ms ease-in-out`;
+            typingText.style.opacity = '1';
+            
+            setTimeout(() => {
+                isVisible = true;
+                setTimeout(toggleVisibility, visibleDuration);
+            }, fadeDuration);
         }
     }
     
-    setTimeout(type, 500);
+    setTimeout(toggleVisibility, visibleDuration);
 }
 
 // Intersection Observer for fade-in animations
