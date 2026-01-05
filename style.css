@@ -524,7 +524,7 @@ strong {
 .interests-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 8px;
     justify-content: center;
     align-items: center;
 }
@@ -532,8 +532,8 @@ strong {
 .interest-tag {
     background: linear-gradient(135deg, rgba(0, 212, 255, 0.08) 0%, rgba(0, 245, 255, 0.04) 100%);
     color: var(--text-primary);
-    padding: 10px 20px;
-    border-radius: 6px;
+    padding: 8px 18px;
+    border-radius: 18px;
     border: 1.5px solid rgba(0, 212, 255, 0.2);
     font-size: 0.9rem;
     font-weight: 500;
@@ -1097,6 +1097,17 @@ footer {
     
     .stat-number {
         font-size: 2rem;
+    }
+    
+    .interests-tags {
+        gap: 5px;
+        justify-content: center;
+    }
+    
+    .interest-tag {
+        padding: 5px 12px;
+        font-size: 0.75rem;
+        border-radius: 15px;
     }
     
     .contact-wrapper {
